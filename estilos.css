@@ -1,0 +1,51 @@
+*{
+margin: 0;
+padding: 0;
+-webkit-box-sizing: border-box; 
+-moz-box-sizing: border-box;
+box-sizing: border-box;
+}
+body{
+background: white;
+}
+
+}
+.navegacion ul{
+list-style: none;
+}
+.menu > li{
+position: relative;
+display: inline-block;
+}
+.menu > li > a{
+display: block;
+padding: 5px 10px;
+color: white;
+font-family: "Open sans";
+text-decoration: none;
+}
+.menu li a:hover{
+background: 1133C2;
+transition: all .3s;
+}
+.submenu{
+	position: absolute;
+	background: #1B3294;
+	width: 110%;
+	visibility: hidden;
+	opacity: 0;
+	transition: opacity 1.5s;
+}
+
+.submenu li a{
+	display: block;
+	padding: 10px;
+	color: 1133C2;
+	font-family: 'Open sans';
+	text-decoration: none;
+}
+
+.menu li:hover .submenu{
+	visibility: visible;
+	opacity: 1;
+}
